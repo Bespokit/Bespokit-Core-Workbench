@@ -76,23 +76,15 @@ Bespokit accepts no responsibility for injury, damage or loss resulting from the
 
 ## Licence
 
-This work is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Licence (CC BY-NC-SA 4.0)**.
+These design files are provided by Bespokit for **personal and non-commercial use**.
 
-You are free to:
+You may download, study, modify and manufacture the design for your own personal or non-commercial use. You may also share the files with others, subject to the terms of the licence.
 
-* Share the files
-* Modify the files
-* Build the workbench for personal and non-commercial use
+**Commercial manufacture, sale of workbenches, sale of kits, commercial distribution of the design files, and other commercial use are not permitted without prior written permission from Bespokit.**
 
-You must:
+See [`LICENSE.md`](LICENSE.md) for the full licence terms.
 
-* Give appropriate credit to Bespokit
-* Indicate if changes have been made
-* Share derivative design files under the same licence
-
-You may **not** use these designs or derivatives for commercial purposes, including manufacturing and selling workbenches based on these designs.
-
-See the `LICENSE` file for the full licence terms.
+If you wish to use the design commercially, please contact Bespokit to discuss licensing.
 
 ## Credits
 
