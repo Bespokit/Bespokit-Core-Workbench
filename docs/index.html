@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bespokit Modular MFT Workbench</title>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #171717;
+        background: #f5f5f3;
+        line-height: 1.6;
+    }
+
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 30px;
+        background: #e9e9e6;
+    }
+
+    .hero-content {
+        max-width: 1200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .hero-text {
+        padding: 20px;
+    }
+
+    .brand {
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin-bottom: 35px;
+    }
+
+    h1 {
+        font-size: clamp(42px, 6vw, 76px);
+        line-height: 1.02;
+        margin: 0 0 25px;
+        font-weight: 700;
+        letter-spacing: -2px;
+    }
+
+    .intro {
+        font-size: 21px;
+        max-width: 560px;
+        color: #444;
+        margin-bottom: 35px;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 16px 28px;
+        background: #171717;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        transition: 0.2s;
+    }
+
+    .button:hover {
+        background: #444;
+    }
+
+    .hero-image {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+    }
+
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 100px 30px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        margin: 0 0 20px;
+        line-height: 1.1;
+    }
+
+    .section-intro {
+        font-size: 19px;
+        color: #555;
+        max-width: 750px;
+        margin-bottom: 50px;
+    }
+
+    .specs {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1px;
+        background: #ccc;
+        border: 1px solid #ccc;
+    }
+
+    .spec {
+        background: white;
+        padding: 30px 20px;
+    }
+
+    .spec strong {
+        display: block;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .spec span {
+        color: #666;
+    }
+
+    .download {
+        background: #171717;
+        color: white;
+        text-align: center;
+        max-width: none;
+    }
+
+    .download .section-intro {
+        color: #ccc;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .download .button {
+        background: white;
+        color: #171717;
+    }
+
+    .download .button:hover {
+        background: #ddd;
+    }
+
+    .features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .feature {
+        background: white;
+        padding: 35px;
+    }
+
+    .feature h3 {
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .feature p {
+        color: #555;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .social a {
+        color: #171717;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 50px 30px;
+        color: #777;
+        font-size: 14px;
+    }
+
+    @media (max-width: 800px) {
+        .hero-content {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        .hero {
+            min-height: auto;
+            padding-top: 40px;
+        }
+
+        .hero-text {
+            order: 2;
+        }
+
+        .hero-image {
+            order: 1;
+        }
+
+        .specs,
+        .features {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .specs,
+        .features {
+            grid-template-columns: 1fr;
+        }
+
+        section {
+            padding: 70px 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="hero">
+    <div class="hero-content">
+
+        <div class="hero-text">
+            <div class="brand">BESPOKIT</div>
+
+            <h1>Modular<br>MFT Workbench</h1>
+
+            <p class="intro">
+                A flexible workshop system designed to be built,
+                modified and adapted to suit the way you work.
+            </p>
+
+            <a class="button"
+               href="https://github.com/Bespokit/Bespokit-Core-Workbench/releases/tag/v1.0">
+                DOWNLOAD THE DESIGN
+            </a>
+        </div>
+
+        <img class="hero-image"
+             src="https://raw.githubusercontent.com/Bespokit/Bespokit-Core-Workbench/main/Images/3_4%20CBD%202.png"
+             alt="Bespokit Modular MFT Workbench">
+    </div>
+</div>
+
+
+<section>
+    <h2 class="section-title">Built around the MFT grid.</h2>
+
+    <p class="section-intro">
+        The Bespokit Modular MFT Workbench combines an MFT-style
+        work surface with integrated storage and a modular system
+        that can be adapted to different workshop layouts.
+    </p>
+
+    <div class="specs">
+        <div class="spec">
+            <strong>1152 mm</strong>
+            <span>Width</span>
+        </div>
+
+        <div class="spec">
+            <strong>768 mm</strong>
+            <span>Depth</span>
+        </div>
+
+        <div class="spec">
+            <strong>977 mm</strong>
+            <span>Overall height</span>
+        </div>
+
+        <div class="spec">
+            <strong>20 / 96 mm</strong>
+            <span>MFT hole / grid</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="download">
+    <h2 class="section-title">Build it yourself.</h2>
+
+    <p class="section-intro">
+        The complete Bespokit Modular MFT Workbench v1.0 design
+        is available free for personal and non-commercial use.
+    </p>
+
+    <a class="button"
+       href="https://github.com/Bespokit/Bespokit-Core-Workbench/releases/tag/v1.0">
+        DOWNLOAD v1.0
+    </a>
+</section>
+
+
+<section>
+    <h2 class="section-title">Everything you need.</h2>
+
+    <p class="section-intro">
+        The release contains the source design, manufacturing
+        information and reference material needed to build the system.
+    </p>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>Fusion 360</h3>
+            <p>
+                The original Fusion 360 source file, allowing you
+                to inspect and modify the design.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>STEP</h3>
+            <p>
+                A neutral CAD assembly for use with other CAD
+                software.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>Technical Drawings</h3>
+            <p>
+                Reference drawings containing the dimensions
+                required to manufacture the components.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="social">
+    <h2 class="section-title">See it being built.</h2>
+
+    <p class="section-intro" style="margin-left:auto;margin-right:auto;">
+        Follow Bespokit on Instagram for builds, development,
+        workshop projects and future modular systems.
+    </p>
+
+    <a href="https://www.instagram.com/bespokit/" target="_blank">
+        FOLLOW @BESPOKIT ON INSTAGRAM →
+    </a>
+</section>
+
+
+<footer>
+    © 2026 Bespokit · Bespokit Modular MFT Workbench v1.0<br><br>
+    Personal and non-commercial use only.
+</footer>
+
+</body>
+</html>
